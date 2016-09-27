@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+h1,h2,h3,h4,h5,h6{
+  color: black;
+  font-weight: bold;
+  font-family: 'Open Sans', Verdana, sans-serif;
+}
+h1{
+	font-size: 2em;
+}
+h2{
+	font-size: 1.8em;
+}
+h3{
+	font-size: 1.6em;
+}
+h4{
+	font-size: 1.4em;
+}
+h5{
+	font-size: 1.2em;
+}
+h6{
+	font-size: 1em;
+}
+small{
+	font-size: 0.8em;
+	color: grey;
+}
+.small{
+	font-size: 0.8em;
+	color: grey;
+}
+p {
+	line-height: inherit;
+}
+mark{
+	background-color: yellow;
+	color: black;
+}
+del{
+	text-decoration: line-through;
+}
+ins{
+	text-decoration: underline;
+}
+u{
+	text-decoration: underline;
+}
+strong{
+	font-weight: bold;
+}
+em{
+	font-style: italic;
+}
+abbr{
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+blockquote {
+  background-color: #f9f9f9;
+	border: 1px solid #ccc;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2016";
+	font-style: italic;
+}
+blockquote::before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+code {
+	background-color: #1B2426;
+	border: 1px solid #ccc;
+	color: white;
+	display: block;
+	padding: 0.5em 10px;
+	margin: 1.5em 10px;
+}
+pre{
+	padding: 0.5em 10px;
+	margin: 1.5em 10px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+kbd{
+	background-color: #f4f7f8;
+	border-radius: 3px;
+	border: 1px solid #b4b4b4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.2),0 2px 0 0 rgba(255,255,255,.7) inset;
+	display: inline-block;
+	font-family: Consolas,"Liberation Mono",Courier,monospace;
+	font-size: .85em;
+	font-weight: 600;
+	opacity: .8;
+	line-height: inherit;
+	padding: 2px 4px;
+	white-space: nowrap;
+}
+hr{
+	border: 0;
+	height: 2px;
+	background-image: linear-gradient(to right, rgba(74, 106, 138, 0), rgba(19, 50, 83, .75), rgba(74, 106, 138, 0));
+	width: 90%;
+}
+ul li{
+	list-style-type: square;
+	margin-left: 5%;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.text-justify{
+	text-align: justify;
+}
+.text-lowercase{
+	text-transform: lowercase;
+}
+.text-uppercase{
+	text-transform: uppercase;
+}
+table{
+	box-sizing: border-box;
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+th{
+	font-weight: bold;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+tr, td{
+	padding: 15px;
+	border: 1px solid #ddd;
+}
+.table-striped tr:nth-child(2n+2){
+	background-color: #F5F5DC;
+}
+.table-selected{
+	background-color: #555;
+	color: white;
+}
+.table-hover td:hover{
+	background-color: #C0C0C0;
+	color: black;
+}
