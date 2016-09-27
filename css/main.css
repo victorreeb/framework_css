@@ -210,8 +210,9 @@ tr, td{
 }
 .table-hover td:hover{
 	background-color: #C0C0C0;
-	color: black
+	color: black;
 }
+
 
 .btn {
 	width: auto;
@@ -230,7 +231,7 @@ tr, td{
 }
 
 .btn-primary {
-	
+
 	color: white;
 }
 
