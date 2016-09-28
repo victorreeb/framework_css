@@ -1,0 +1,76 @@
+@btn{
+  width: auto;
+  text-align: center;
+  background-color: #F2F2F2;
+  font-size: 16px;
+  border-radius:8px 8px 8px 8px;
+  margin-left:2%;
+  margin-right:2%;
+  margin-top: 2%;
+  padding: 10px 50px;
+}
+
+.btn-primary {
+  @extend .btn;
+  background-color: #1E90FF;
+  color: white;
+  &:active{
+    background-color:#337ab7;
+  }
+}
+
+.btn-secondary {
+
+  &:active{
+
+  }
+}
+
+.btn-success{
+
+  &:active{
+
+  }
+}
+
+.btn-info{
+
+  &:active{
+
+  }
+}
+
+.btn-warning{
+  background-color:  #ff9900;
+	color: white;
+
+  &:active{
+    background-color: 	 #e68a00;
+    color: white;
+  }
+
+}
+
+
+.btn-danger{
+  background-color: #cc0000;
+	color: white;
+
+  &:active{
+    background-color: #990000;
+  }
+}
+
+.btn-link{
+
+  &:active{
+
+  }
+}
+
+.btn-lg{
+
+  &:active{
+
+  }
+}

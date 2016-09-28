@@ -215,15 +215,7 @@ tr, td{
 
 
 .btn {
-	width: auto;
-	text-align: center;
-	background-color: #F2F2F2;
-	font-size: 16px;
-	border-radius:8px 8px 8px 8px;
-	margin-left:2%;
-	margin-right:2%;
-	margin-top: 2%;
-	padding: 10px 50px;
+
 }
 
 .btn:active{
@@ -232,11 +224,10 @@ tr, td{
 
 .btn-primary {
 
-	color: white;
 }
 
 .btn-primary:active{
-	background-color: #1E90FF;
+
 }
 
 .btn-secondary {
@@ -252,11 +243,22 @@ tr, td{
 }
 
 .btn-warning {
+	background-color:  #ff9900;
+	color: white;
+}
 
+.btn-warning:active{
+	background-color: 	 #e68a00;
+	color: white;
 }
 
 .btn-danger {
+	background-color: #cc0000;
+	color: white;
+}
 
+.btn-danger:active{
+	background-color: #990000;
 }
 
 .btn-link {
@@ -268,7 +270,7 @@ tr, td{
 }
 
 .blue {
-	background-color:#337ab7;
+
 }
 
 .alert{
