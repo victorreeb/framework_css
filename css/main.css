@@ -290,3 +290,15 @@ tr, td{
 .jumbotron{
 
 }
+
+.img{
+	margin: 2px;
+}
+
+.img-responsive{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	width: 100%\9;
+
+}
