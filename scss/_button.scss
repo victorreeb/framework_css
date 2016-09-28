@@ -1,4 +1,4 @@
-@btn{
+.btn{
   width: auto;
   text-align: center;
   background-color: #F2F2F2;
@@ -20,6 +20,7 @@
 }
 
 .btn-secondary {
+  @extend .btn;
 
   &:active{
 
@@ -27,6 +28,7 @@
 }
 
 .btn-success{
+  @extend .btn;
 
   &:active{
 
@@ -34,6 +36,7 @@
 }
 
 .btn-info{
+  @extend .btn;
 
   &:active{
 
@@ -41,6 +44,8 @@
 }
 
 .btn-warning{
+  @extend .btn;
+
   background-color:  #ff9900;
 	color: white;
 
@@ -51,8 +56,9 @@
 
 }
 
-
 .btn-danger{
+  @extend .btn;
+
   background-color: #cc0000;
 	color: white;
 
@@ -62,6 +68,7 @@
 }
 
 .btn-link{
+  @extend .btn;
 
   &:active{
 
@@ -69,6 +76,7 @@
 }
 
 .btn-lg{
+  @extend .btn;
 
   &:active{
 
