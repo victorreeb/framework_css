@@ -272,7 +272,7 @@ tr, td{
 }
 
 .alert{
-
+	background-color: red;
 }
 
 .alert-success{
@@ -288,5 +288,5 @@ tr, td{
 }
 
 .jumbotron{
-	
+
 }
