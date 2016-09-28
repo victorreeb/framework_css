@@ -1,0 +1,36 @@
+@import "variables";
+
+.alert{
+  width: 100%;
+  height: auto;
+  display:block;
+  color: white;
+}
+.alert-default{
+  @extend .alert;
+  background-color: $brand-default;
+}
+.alert-primary{
+  @extend .alert;
+  background-color: $brand-primary;
+}
+.alert-success{
+  @extend .alert;
+  background-color: $brand-success;
+}
+.alert-secondary{
+  @extend .alert;
+  background-color: $brand-secondary;
+}
+.alert-info{
+  @extend .alert;
+  background-color: $brand-info;
+}
+.alert-warning{
+  @extend .alert;
+  background-color: $brand-warning;
+}
+.alert-danger{
+  @extend .alert;
+  background-color: $brand-danger;
+}
