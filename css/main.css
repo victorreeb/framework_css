@@ -101,6 +101,48 @@ table {
   background-color: #C0C0C0;
   color: black; }
 
+/*
+$brand-secondary: ;
+$brand-secondary-active: ;
+*/
+/*$brand-success-active: ;
+*/
+/*$brand-info-active:    ;*/
+/*$brand-warning-active: ;*/
+/*$brand-danger-active:  ;
+
+$brand-link: ;
+$brand-link-active: ;
+
+$brand-lg: ;
+$brand-lg-active: ;
+*/
+.alert, .alert-default, .alert-primary, .alert-success, .alert-info, .alert-warning, .alert-danger {
+  width: 100%;
+  height: auto;
+  display: block;
+  color: white;
+  padding: 2em;
+  font-weight: bold; }
+
+.alert-default {
+  background-color: #F2F2F2; }
+
+.alert-primary {
+  background-color: #1E90FF; }
+
+.alert-success {
+  background-color: #5cb85c; }
+
+.alert-info {
+  background-color: #5bc0de; }
+
+.alert-warning {
+  background-color: #f0ad4e; }
+
+.alert-danger {
+  background-color: #d9534f; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

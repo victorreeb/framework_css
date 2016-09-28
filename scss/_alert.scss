@@ -5,6 +5,8 @@
   height: auto;
   display:block;
   color: white;
+  padding: 2em;
+  font-weight: bold;
 }
 .alert-default{
   @extend .alert;
@@ -18,10 +20,10 @@
   @extend .alert;
   background-color: $brand-success;
 }
-.alert-secondary{
-  @extend .alert;
-  background-color: $brand-secondary;
-}
+// .alert-secondary{
+//   @extend .alert;
+//   background-color: $brand-secondary;
+// }
 .alert-info{
   @extend .alert;
   background-color: $brand-info;
