@@ -3,6 +3,22 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/*
+$brand-secondary: ;
+$brand-secondary-active: ;
+*/
+/*$brand-success-active: ;
+*/
+/*$brand-info-active:    ;*/
+/*$brand-warning-active: ;*/
+/*$brand-danger-active:  ;
+
+$brand-link: ;
+$brand-link-active: ;
+
+$brand-lg: ;
+$brand-lg-active: ;
+*/
 .btn, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link, .btn-lg {
   width: auto;
   text-align: center;
@@ -13,12 +29,18 @@
   margin-right: 2%;
   margin-top: 2%;
   padding: 10px 50px; }
+  .btn:active, .btn-primary:active, .btn-secondary:active, .btn-success:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-link:active, .btn-lg:active {
+    background-color: #b3b3b3; }
 
 .btn-primary {
   background-color: #1E90FF;
   color: white; }
   .btn-primary:active {
     background-color: #337ab7; }
+
+.btn-secondary {
+  background-color: #1a1aff;
+  color: white; }
 
 .btn-warning {
   background-color: #ff9900;
@@ -33,6 +55,22 @@
   .btn-danger:active {
     background-color: #990000; }
 
+/*
+$brand-secondary: ;
+$brand-secondary-active: ;
+*/
+/*$brand-success-active: ;
+*/
+/*$brand-info-active:    ;*/
+/*$brand-warning-active: ;*/
+/*$brand-danger-active:  ;
+
+$brand-link: ;
+$brand-link-active: ;
+
+$brand-lg: ;
+$brand-lg-active: ;
+*/
 .img-responsive {
   max-width: 100%;
   height: auto;

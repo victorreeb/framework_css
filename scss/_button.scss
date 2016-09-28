@@ -1,3 +1,5 @@
+@import "variables";
+
 .btn{
   width: auto;
   text-align: center;
@@ -8,11 +10,14 @@
   margin-right:2%;
   margin-top: 2%;
   padding: 10px 50px;
+  &:active{
+    background-color:#b3b3b3;
+  }
 }
 
 .btn-primary {
   @extend .btn;
-  background-color: #1E90FF;
+  background-color: $brand-primary;
   color: white;
   &:active{
     background-color:#337ab7;
@@ -21,7 +26,8 @@
 
 .btn-secondary {
   @extend .btn;
-
+  background-color: #1a1aff;
+  color: white;
   &:active{
 
   }
