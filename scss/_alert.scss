@@ -10,7 +10,6 @@
 }
 .alert-default{
   @extend .alert;
-  color: black;
   background-color: $brand-default;
 }
 .alert-primary{

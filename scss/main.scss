@@ -2,11 +2,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import "button";
 @import "variables";
+@import "button";
 @import "images";
 @import "tables";
 @import "alert";
+@import "composant";
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -163,8 +164,8 @@ kbd{
 }
 hr{
 	border: 0;
-	height: 2px;
-	background-image: linear-gradient(to right, rgba(74, 106, 138, 0), rgba(19, 50, 83, .75), rgba(74, 106, 138, 0));
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(26, 26, 26, 0.2), rgba(0, 0, 0, 0.75), rgba(26, 26, 26, 0.2));
 	width: 90%;
 }
 ul li{

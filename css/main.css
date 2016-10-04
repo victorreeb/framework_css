@@ -19,6 +19,22 @@ $brand-link-active: ;
 $brand-lg: ;
 $brand-lg-active: ;
 */
+/*
+$brand-secondary: ;
+$brand-secondary-active: ;
+*/
+/*$brand-success-active: ;
+*/
+/*$brand-info-active:    ;*/
+/*$brand-warning-active: ;*/
+/*$brand-danger-active:  ;
+
+$brand-link: ;
+$brand-link-active: ;
+
+$brand-lg: ;
+$brand-lg-active: ;
+*/
 .btn, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link, .btn-lg {
   width: auto;
   text-align: center;
@@ -27,7 +43,6 @@ $brand-lg-active: ;
   border-radius: 8px 8px 8px 8px;
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 2%;
   padding: 10px 50px; }
   .btn:active, .btn-primary:active, .btn-secondary:active, .btn-success:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-link:active, .btn-lg:active {
     background-color: #b3b3b3; }
@@ -55,22 +70,6 @@ $brand-lg-active: ;
   .btn-danger:active {
     background-color: #990000; }
 
-/*
-$brand-secondary: ;
-$brand-secondary-active: ;
-*/
-/*$brand-success-active: ;
-*/
-/*$brand-info-active:    ;*/
-/*$brand-warning-active: ;*/
-/*$brand-danger-active:  ;
-
-$brand-link: ;
-$brand-link-active: ;
-
-$brand-lg: ;
-$brand-lg-active: ;
-*/
 .img-responsive {
   max-width: 100%;
   height: auto;
@@ -126,8 +125,7 @@ $brand-lg-active: ;
   font-weight: bold; }
 
 .alert-default {
-  color: black;
-  background-color: #F2F2F2; }
+  background-color: #999999; }
 
 .alert-primary {
   background-color: #1E90FF; }
@@ -143,6 +141,45 @@ $brand-lg-active: ;
 
 .alert-danger {
   background-color: #d9534f; }
+
+/*
+$brand-secondary: ;
+$brand-secondary-active: ;
+*/
+/*$brand-success-active: ;
+*/
+/*$brand-info-active:    ;*/
+/*$brand-warning-active: ;*/
+/*$brand-danger-active:  ;
+
+$brand-link: ;
+$brand-link-active: ;
+
+$brand-lg: ;
+$brand-lg-active: ;
+*/
+.header {
+  height: auto;
+  border: 1px solid #808080;
+  width: 100%;
+  display: inline-flex;
+  padding: 1em; }
+  .header p, .header ul, .header li, .header img, .header h1, .header h2, .header h3, .header h4, .header h5, .header h6 {
+    padding: 10px; }
+  .header h1, .header h2, .header h3, .header h4, .header h5, .header h6 {
+    text-align: center; }
+
+.jombotron {
+  height: auto;
+  width: 100%;
+  border: 1px solid #999999;
+  display: block;
+  padding: 1em; }
+  .jombotron p, .jombotron ul, .jombotron li, .jombotron img, .jombotron h1, .jombotron h2, .jombotron h3, .jombotron h4, .jombotron h5, .jombotron h6 {
+    padding-left: 10px;
+    padding-bottom: 10px; }
+  .jombotron h1, .jombotron h2, .jombotron h3, .jombotron h4, .jombotron h5, .jombotron h6 {
+    text-align: center; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -297,8 +334,8 @@ kbd {
 
 hr {
   border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, rgba(74, 106, 138, 0), rgba(19, 50, 83, 0.75), rgba(74, 106, 138, 0));
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(26, 26, 26, 0.2), rgba(0, 0, 0, 0.75), rgba(26, 26, 26, 0.2));
   width: 90%; }
 
 ul li {
