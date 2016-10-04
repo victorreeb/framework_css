@@ -1,331 +1,71 @@
-@charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+Error: Invalid CSS after "...efault: #b3b3b3": expected "{", was ";"
+        on line 2 of scss/_variables.scss
+        from line 5 of scss/main.scss
+
+1: <<<<<<< HEAD
+2: $brand-default: #b3b3b3;
+3: $brand-default-active: #8c8c8c;
+4: =======
+5: $brand-default: #999999;
+6: $brand-default-active: #808080;
+7: >>>>>>> c096fb7085427d3b4e32875cdd9078150ac614ab
+
+Backtrace:
+scss/_variables.scss:2
+scss/main.scss:5
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/Pierre/.rvm/gems/ruby-2.0.0-p648@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
-/* Color */
-/* Font Size */
-/* Padding */
-.btn, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link, .smal, .large, .flat, .lg, .fancy {
-  width: auto;
-  text-align: center;
-  background-color: #b3b3b3;
-  font-size: 16px;
-  border-radius: 8px 8px 8px 8px;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 1%;
-  padding: 10px 50px;
-  color: white; }
-  .btn:active, .btn-primary:active, .btn-secondary:active, .btn-success:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-link:active, .smal:active, .large:active, .flat:active, .lg:active, .fancy:active {
-    background-color: #8c8c8c; }
-
-/* Différent boutons */
-.btn-primary {
-  background-color: #1E90FF; }
-  .btn-primary:active {
-    background-color: #337ab7; }
-
-.btn-secondary {
-  background-color: #1a1aff; }
-  .btn-secondary:active {
-    background-color: #0000b3; }
-
-.btn-success {
-  background-color: #5cb85c; }
-  .btn-success:active {
-    background-color: #3e8e3e; }
-
-.btn-info {
-  background-color: #5bc0de; }
-  .btn-info:active {
-    background-color: #279bbe; }
-
-.btn-warning {
-  background-color: #f0ad4e; }
-  .btn-warning:active {
-    background-color: #d38312;
-    color: white; }
-
-.btn-danger {
-  background-color: #d9534f; }
-  .btn-danger:active {
-    background-color: #a72925; }
-
-.btn-link {
-  background-color: #9900ff; }
-  .btn-link:active {
-    background-color: #6b00b3; }
-
-/* Taille des boutons */
-.smal {
-  line-height: 0,1;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  border-radius: 0.2rem; }
-
-.large {
-  padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
-  border-radius: 0.3rem; }
-
-/* Apparence des boutons */
-.flat {
-  border: 0;
-  border-radius: 0px;
-  margin-left: -5px; }
-
-.lg {
-  width: 100%; }
-
-.fancy {
-  font-family: Arial,sans-serif;
-  text-align: center;
-  background: linear-gradient(#555, #b3b3b3);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.4); }
-  .fancy:hover {
-    background: #555;
-    background: linear-gradient(#777, #333); }
-  .fancy:active {
-    background: #444;
-    background: linear-gradient(#555, #2C2C2C);
-    box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba(255, 255, 255, 0.4); }
-
-.img-responsive {
-  max-width: 100%;
-  height: auto;
-  display: block; }
-
-table {
-  box-sizing: border-box;
-  width: 90%;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-  table th {
-    font-weight: bold;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #ddd; }
-  table tr, table td {
-    padding: 15px;
-    border: 1px solid #ddd; }
-
-.table-striped tr:nth-child(2n+2) {
-  background-color: #F5F5DC; }
-
-.table-selected {
-  background-color: #555;
-  color: white; }
-
-.table-hover td:hover {
-  background-color: #C0C0C0;
-  color: black; }
-
-.alert, .alert-default, .alert-primary, .alert-success, .alert-info, .alert-warning, .alert-danger {
-  width: 100%;
-  height: auto;
-  display: block;
-  color: white;
-  padding: 1.5em;
-  font-weight: bold; }
-
-.alert-default {
-  color: black;
-  background-color: #b3b3b3; }
-
-.alert-primary {
-  background-color: #1E90FF; }
-
-.alert-success {
-  background-color: #5cb85c; }
-
-.alert-info {
-  background-color: #5bc0de; }
-
-.alert-warning {
-  background-color: #f0ad4e; }
-
-.alert-danger {
-  background-color: #d9534f; }
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1;
-  margin-left: 10px;
-  margin-right: 10px; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/*-----------------------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
-  color: black;
-  font-weight: bold;
-  font-family: 'Open Sans', Verdana, sans-serif; }
-
-h1 {
-  font-size: 2em; }
-
-h2 {
-  font-size: 1.8em; }
-
-h3 {
-  font-size: 1.6em; }
-
-h4 {
-  font-size: 1.4em; }
-
-h5 {
-  font-size: 1.2em; }
-
-h6 {
-  font-size: 1em; }
-
-small {
-  font-size: 0.8em;
-  color: grey; }
-
-.small {
-  font-size: 0.8em;
-  color: grey; }
-
-p {
-  line-height: inherit; }
-
-mark {
-  background-color: yellow;
-  color: black; }
-
-del {
-  text-decoration: line-through; }
-
-ins {
-  text-decoration: underline; }
-
-u {
-  text-decoration: underline; }
-
-strong {
-  font-weight: bold; }
-
-em {
-  font-style: italic; }
-
-abbr {
-  text-decoration: underline;
-  text-decoration-style: dotted; }
-
-blockquote {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "“" "”" "‘" "‖";
-  font-style: italic; }
-
-blockquote::before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em; }
-
-blockquote p {
-  display: inline; }
-
-code {
-  background-color: #1B2426;
-  border: 1px solid #ccc;
-  color: white;
-  display: block;
-  padding: 0.5em 10px;
-  margin: 1.5em 10px; }
-
-pre {
-  padding: 0.5em 10px;
-  margin: 1.5em 10px;
-  word-wrap: break-word;
-  white-space: pre-wrap; }
-
-kbd {
-  background-color: #f4f7f8;
-  border-radius: 3px;
-  border: 1px solid #b4b4b4;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-  display: inline-block;
-  font-family: Consolas,"Liberation Mono",Courier,monospace;
-  font-size: .85em;
-  font-weight: 600;
-  opacity: .8;
-  line-height: inherit;
-  padding: 2px 4px;
-  white-space: nowrap; }
-
-hr {
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, rgba(74, 106, 138, 0), rgba(19, 50, 83, 0.75), rgba(74, 106, 138, 0));
-  width: 90%; }
-
-ul li {
-  list-style-type: square;
-  margin-left: 5%; }
-
-.text-left {
-  text-align: left; }
-
-.text-right {
-  text-align: right; }
-
-.text-center {
-  text-align: center; }
-
-.text-justify {
-  text-align: justify; }
-
-.text-lowercase {
-  text-transform: lowercase; }
-
-.text-uppercase {
-  text-transform: uppercase; }
-
-/*# sourceMappingURL=main.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...efault: #b3b3b3\": expected \"{\", was \";\"\A         on line 2 of scss/_variables.scss\A         from line 5 of scss/main.scss\A \A 1: <<<<<<< HEAD\A 2: $brand-default: #b3b3b3;\A 3: $brand-default-active: #8c8c8c;\A 4: =======\A 5: $brand-default: #999999;\A 6: $brand-default-active: #808080;\A 7: >>>>>>> c096fb7085427d3b4e32875cdd9078150ac614ab"; }

@@ -1,0 +1,32 @@
+@import "variables";
+
+.header {
+    height: auto;
+    border: 1px solid $brand-default-active;
+    width: 100%;
+    display: inline-flex;
+    padding: 1em;
+    & p,ul,li,img,h1,h2,h3,h4,h5,h6{
+      padding: 10px;
+    }
+    & h1,h2,h3,h4,h5,h6{
+      text-align: center;
+    }
+}
+
+
+.jombotron{
+  height: auto;
+  width: 100%;
+  border: 1px solid $brand-default;
+  display: block;
+  padding: 1em;
+  & p,ul,li,img,h1,h2,h3,h4,h5,h6{
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  & h1,h2,h3,h4,h5,h6{
+    text-align: center;
+  }
+
+}
