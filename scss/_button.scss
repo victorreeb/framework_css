@@ -3,22 +3,25 @@
 .btn{
   width: auto;
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: $brand-default;
   font-size: 16px;
   border-radius:8px 8px 8px 8px;
   margin-left:2%;
   margin-right:2%;
-  margin-top: 2%;
+  margin-top: 1%;
   padding: 10px 50px;
+  color : white;
   &:active{
-    background-color:#b3b3b3;
+    background-color: $brand-default-active;
   }
 }
+
+/* Différent boutons */
 
 .btn-primary {
   @extend .btn;
   background-color: $brand-primary;
-  color: white;
+
   &:active{
     background-color:$brand-primary-active;
   }
@@ -27,7 +30,7 @@
 .btn-secondary {
   @extend .btn;
   background-color: $brand-secondary;
-  color: white;
+
   &:active{
     background-color: $brand-secondary-active;
   }
@@ -46,6 +49,7 @@
   @extend .btn;
 
   background-color: $brand-info;
+
   &:active{
     background-color: $brand-info-active;
   }
@@ -55,7 +59,6 @@
   @extend .btn;
 
   background-color:  $brand-warning;
-	color: white;
 
   &:active{
     background-color: 	 $brand-warning-active;
@@ -68,7 +71,6 @@
   @extend .btn;
 
   background-color: $brand-danger;
-	color: white;
 
   &:active{
     background-color: $brand-danger-active;
@@ -78,15 +80,58 @@
 .btn-link{
   @extend .btn;
   background-color: $brand-link;
+
   &:active{
     background-color: $brand-link-active;
   }
 }
+/* Taille des boutons */
 
-.btn-lg{
+.smal{
+  @extend .btn;
+  line-height: 0,1;
+
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+.large{
+  @extend .btn;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+
+}
+
+/* Apparence des boutons */
+
+.flat{
   @extend .btn;
 
-  &:active{
+  border: 0;
+  border-radius: 0px;
+  margin-left: -5px;
+}
 
-  }
+.lg{
+  @extend .btn;
+
+  width: 100%;
+
+}
+
+
+.fancy{
+  @extend .btn;
+
+  font-family: Arial,sans-serif;
+  text-align: center;
+
+  background: linear-gradient( #555, $brand-default);
+  text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+
+  box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
+            0 -1px 0 rgba( 255, 255, 255, 0.4);
+
 }
