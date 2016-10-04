@@ -20,43 +20,45 @@
   background-color: $brand-primary;
   color: white;
   &:active{
-    background-color:#337ab7;
+    background-color:$brand-primary-active;
   }
 }
 
 .btn-secondary {
   @extend .btn;
-  background-color: #1a1aff;
+  background-color: $brand-secondary;
   color: white;
   &:active{
-
+    background-color: $brand-secondary-active;
   }
 }
 
 .btn-success{
   @extend .btn;
+  background-color: $brand-success;
 
   &:active{
-
+    background-color: $brand-success-active;
   }
 }
 
 .btn-info{
   @extend .btn;
 
+  background-color: $brand-info;
   &:active{
-
+    background-color: $brand-info-active;
   }
 }
 
 .btn-warning{
   @extend .btn;
 
-  background-color:  #ff9900;
+  background-color:  $brand-warning;
 	color: white;
 
   &:active{
-    background-color: 	 #e68a00;
+    background-color: 	 $brand-warning-active;
     color: white;
   }
 
@@ -65,19 +67,19 @@
 .btn-danger{
   @extend .btn;
 
-  background-color: #cc0000;
+  background-color: $brand-danger;
 	color: white;
 
   &:active{
-    background-color: #990000;
+    background-color: $brand-danger-active;
   }
 }
 
 .btn-link{
   @extend .btn;
-
+  background-color: $brand-link;
   &:active{
-
+    background-color: $brand-link-active;
   }
 }
 

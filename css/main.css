@@ -3,22 +3,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/*
-$brand-secondary: ;
-$brand-secondary-active: ;
-*/
-/*$brand-success-active: ;
-*/
-/*$brand-info-active:    ;*/
-/*$brand-warning-active: ;*/
-/*$brand-danger-active:  ;
-
-$brand-link: ;
-$brand-link-active: ;
-
-$brand-lg: ;
-$brand-lg-active: ;
-*/
 .btn, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link, .btn-lg {
   width: auto;
   text-align: center;
@@ -41,36 +25,37 @@ $brand-lg-active: ;
 .btn-secondary {
   background-color: #1a1aff;
   color: white; }
+  .btn-secondary:active {
+    background-color: #0000b3; }
+
+.btn-success {
+  background-color: #5cb85c; }
+  .btn-success:active {
+    background-color: #3e8e3e; }
+
+.btn-info {
+  background-color: #5bc0de; }
+  .btn-info:active {
+    background-color: #279bbe; }
 
 .btn-warning {
-  background-color: #ff9900;
+  background-color: #f0ad4e;
   color: white; }
   .btn-warning:active {
-    background-color: #e68a00;
+    background-color: #d38312;
     color: white; }
 
 .btn-danger {
-  background-color: #cc0000;
+  background-color: #d9534f;
   color: white; }
   .btn-danger:active {
-    background-color: #990000; }
+    background-color: #a72925; }
 
-/*
-$brand-secondary: ;
-$brand-secondary-active: ;
-*/
-/*$brand-success-active: ;
-*/
-/*$brand-info-active:    ;*/
-/*$brand-warning-active: ;*/
-/*$brand-danger-active:  ;
+.btn-link {
+  background-color: #cc3399; }
+  .btn-link:active {
+    background-color: #8f246b; }
 
-$brand-link: ;
-$brand-link-active: ;
-
-$brand-lg: ;
-$brand-lg-active: ;
-*/
 .img-responsive {
   max-width: 100%;
   height: auto;
@@ -101,22 +86,6 @@ table {
   background-color: #C0C0C0;
   color: black; }
 
-/*
-$brand-secondary: ;
-$brand-secondary-active: ;
-*/
-/*$brand-success-active: ;
-*/
-/*$brand-info-active:    ;*/
-/*$brand-warning-active: ;*/
-/*$brand-danger-active:  ;
-
-$brand-link: ;
-$brand-link-active: ;
-
-$brand-lg: ;
-$brand-lg-active: ;
-*/
 .alert, .alert-default, .alert-primary, .alert-success, .alert-info, .alert-warning, .alert-danger {
   width: 100%;
   height: auto;
