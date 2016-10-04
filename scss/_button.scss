@@ -1,6 +1,7 @@
 /* Color */
 $brand-default: #b3b3b3 !default;
 $brand-default-active: #8c8c8c !default;
+$brand-color-default: white !default;
 
 $brand-primary: #1E90FF !default;
 $brand-primary-active:#337ab7 !default;
@@ -31,6 +32,11 @@ $fz-smal: 0.875rem !default;
 $fz-large: 1.25rem !default;
 
 /* Padding */
+$pdg-default: 10px 50px !default;
+
+$pdg-smal:0.25rem 0.5rem !default;
+
+$pdg-large: 0.75rem 1.5rem!default;
 
 .btn{
   width: auto;
@@ -40,8 +46,8 @@ $fz-large: 1.25rem !default;
   border-radius:8px 8px 8px 8px;
   margin-left:2%;
   margin-right:2%;
-  padding: 10px 50px;
-  color : white;
+  padding: $pdg-default;
+  color : $brand-color-default;
   &:active{
     background-color: $brand-default-active;
   }
@@ -93,7 +99,7 @@ $fz-large: 1.25rem !default;
 
   &:active{
     background-color: 	 $brand-warning-active;
-    color: white;
+    color:  $brand-color-default;
   }
 
 }
@@ -110,6 +116,7 @@ $fz-large: 1.25rem !default;
 
 .btn-link{
   @extend .btn;
+
   background-color: $brand-link;
 
   &:active{
@@ -120,19 +127,19 @@ $fz-large: 1.25rem !default;
 
 .smal{
   @extend .btn;
-  line-height: 0,1;
 
-  padding: 0.25rem 0.5rem;
+  line-height: 0,1;
+  padding: $pdg-smal;
   font-size: $fz-smal;
   border-radius: 0.2rem;
 }
 
 .large{
   @extend .btn;
-  padding: 0.75rem 1.5rem;
+
+  padding: $pdg-large;
   font-size: $fz-large;
   border-radius: 0.3rem;
-
 }
 
 /* Apparence des boutons */
@@ -149,7 +156,6 @@ $fz-large: 1.25rem !default;
   @extend .btn;
 
   width: 100%;
-
 }
 
 
@@ -158,19 +164,14 @@ $fz-large: 1.25rem !default;
 
   font-family: Arial,sans-serif;
   text-align: center;
-
   background: linear-gradient( #555, $brand-default);
   text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
-
   box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
             0 -1px 0 rgba( 255, 255, 255, 0.4);
-
   &:hover{
-
      background: #555;
      background: linear-gradient( #777, #333);
   }
-
   &:active{
    background: #444;
    background: linear-gradient( #555, #2C2C2C);
