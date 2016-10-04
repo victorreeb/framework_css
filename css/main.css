@@ -3,27 +3,30 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-.btn, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link, .btn-lg {
+/* Color */
+/* Font Size */
+/* Padding */
+.btn, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link, .smal, .large, .flat, .lg, .fancy {
   width: auto;
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #b3b3b3;
   font-size: 16px;
   border-radius: 8px 8px 8px 8px;
   margin-left: 2%;
   margin-right: 2%;
-  padding: 10px 50px; }
-  .btn:active, .btn-primary:active, .btn-secondary:active, .btn-success:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-link:active, .btn-lg:active {
-    background-color: #b3b3b3; }
-
-.btn-primary {
-  background-color: #1E90FF;
+  padding: 10px 50px;
   color: white; }
+  .btn:active, .btn-primary:active, .btn-secondary:active, .btn-success:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-link:active, .smal:active, .large:active, .flat:active, .lg:active, .fancy:active {
+    background-color: #8c8c8c; }
+
+/* Différent boutons */
+.btn-primary {
+  background-color: #1E90FF; }
   .btn-primary:active {
     background-color: #337ab7; }
 
 .btn-secondary {
-  background-color: #1a1aff;
-  color: white; }
+  background-color: #1a1aff; }
   .btn-secondary:active {
     background-color: #0000b3; }
 
@@ -38,22 +41,55 @@
     background-color: #279bbe; }
 
 .btn-warning {
-  background-color: #f0ad4e;
-  color: white; }
+  background-color: #f0ad4e; }
   .btn-warning:active {
     background-color: #d38312;
     color: white; }
 
 .btn-danger {
-  background-color: #d9534f;
-  color: white; }
+  background-color: #d9534f; }
   .btn-danger:active {
     background-color: #a72925; }
 
 .btn-link {
-  background-color: #cc3399; }
+  background-color: #9900ff; }
   .btn-link:active {
-    background-color: #8f246b; }
+    background-color: #6b00b3; }
+
+/* Taille des boutons */
+.smal {
+  line-height: 0,1;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem; }
+
+.large {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem; }
+
+/* Apparence des boutons */
+.flat {
+  border: 0;
+  border-radius: 0px;
+  margin-left: -5px; }
+
+.lg {
+  width: 100%; }
+
+.fancy {
+  font-family: Arial,sans-serif;
+  text-align: center;
+  background: linear-gradient(#555, #b3b3b3);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.4); }
+  .fancy:hover {
+    background: #555;
+    background: linear-gradient(#777, #333); }
+  .fancy:active {
+    background: #444;
+    background: linear-gradient(#555, #2C2C2C);
+    box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba(255, 255, 255, 0.4); }
 
 .img-responsive {
   max-width: 100%;
@@ -94,7 +130,7 @@ table {
   font-weight: bold; }
 
 .alert-default {
-  background-color: #999999; }
+  background-color: #b3b3b3; }
 
 .alert-primary {
   background-color: #1E90FF; }
@@ -113,7 +149,7 @@ table {
 
 .header {
   height: auto;
-  border: 1px solid #808080;
+  border: 1px solid #8c8c8c;
   width: 100%;
   display: inline-flex;
   padding: 1em; }
@@ -125,7 +161,7 @@ table {
 .jombotron {
   height: auto;
   width: 100%;
-  border: 1px solid #999999;
+  border: 1px solid #b3b3b3;
   display: block;
   padding: 1em; }
   .jombotron p, .jombotron ul, .jombotron li, .jombotron img, .jombotron h1, .jombotron h2, .jombotron h3, .jombotron h4, .jombotron h5, .jombotron h6 {

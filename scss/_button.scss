@@ -1,23 +1,58 @@
-@import "variables";
+/* Color */
+$brand-default: #b3b3b3 !default;
+$brand-default-active: #8c8c8c !default;
+
+$brand-primary: #1E90FF !default;
+$brand-primary-active:#337ab7 !default;
+
+$brand-secondary: #1a1aff !default;
+$brand-secondary-active: #0000b3 !default;
+
+$brand-success: #5cb85c !default;
+$brand-success-active: #3e8e3e !default;
+
+$brand-info:    #5bc0de !default;
+$brand-info-active:  #279bbe !default;
+
+$brand-warning: #f0ad4e !default;
+$brand-warning-active:  #d38312 !default;
+
+$brand-danger:  #d9534f !default;
+$brand-danger-active:  #a72925 !default;
+
+$brand-link:  #9900ff !default;
+$brand-link-active: #6b00b3 !default;
+
+/* Font Size */
+$fz-default: 16px !default;
+
+$fz-smal: 0.875rem !default;
+
+$fz-large: 1.25rem !default;
+
+/* Padding */
 
 .btn{
   width: auto;
   text-align: center;
-  background-color: #F2F2F2;
-  font-size: 16px;
+  background-color: $brand-default;
+  font-size: $fz-default;
   border-radius:8px 8px 8px 8px;
   margin-left:2%;
   margin-right:2%;
   padding: 10px 50px;
+  color : white;
   &:active{
-    background-color:#b3b3b3;
+    background-color: $brand-default-active;
   }
 }
+
+/* Différent boutons */
 
 .btn-primary {
   @extend .btn;
   background-color: $brand-primary;
-  color: white;
+
   &:active{
     background-color:$brand-primary-active;
   }
@@ -26,7 +61,7 @@
 .btn-secondary {
   @extend .btn;
   background-color: $brand-secondary;
-  color: white;
+
   &:active{
     background-color: $brand-secondary-active;
   }
@@ -45,6 +80,7 @@
   @extend .btn;
 
   background-color: $brand-info;
+
   &:active{
     background-color: $brand-info-active;
   }
@@ -54,7 +90,6 @@
   @extend .btn;
 
   background-color:  $brand-warning;
-	color: white;
 
   &:active{
     background-color: 	 $brand-warning-active;
@@ -67,7 +102,6 @@
   @extend .btn;
 
   background-color: $brand-danger;
-	color: white;
 
   &:active{
     background-color: $brand-danger-active;
@@ -77,15 +111,70 @@
 .btn-link{
   @extend .btn;
   background-color: $brand-link;
+
   &:active{
     background-color: $brand-link-active;
   }
 }
+/* Taille des boutons */
 
-.btn-lg{
+.smal{
+  @extend .btn;
+  line-height: 0,1;
+
+  padding: 0.25rem 0.5rem;
+  font-size: $fz-smal;
+  border-radius: 0.2rem;
+}
+
+.large{
+  @extend .btn;
+  padding: 0.75rem 1.5rem;
+  font-size: $fz-large;
+  border-radius: 0.3rem;
+
+}
+
+/* Apparence des boutons */
+
+.flat{
   @extend .btn;
 
-  &:active{
+  border: 0;
+  border-radius: 0px;
+  margin-left: -5px;
+}
 
+.lg{
+  @extend .btn;
+
+  width: 100%;
+
+}
+
+
+.fancy{
+  @extend .btn;
+
+  font-family: Arial,sans-serif;
+  text-align: center;
+
+  background: linear-gradient( #555, $brand-default);
+  text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+
+  box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
+            0 -1px 0 rgba( 255, 255, 255, 0.4);
+
+  &:hover{
+
+     background: #555;
+     background: linear-gradient( #777, #333);
+  }
+
+  &:active{
+   background: #444;
+   background: linear-gradient( #555, #2C2C2C);
+   box-shadow: 1px 1px 10px black inset,
+               0 1px 0 rgba( 255, 255, 255, 0.4);
   }
 }
