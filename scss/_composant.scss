@@ -18,7 +18,8 @@
 .jombotron{
   height: auto;
   width: 100%;
-  border: 1px solid $brand-default;
+  background-color: $brand-default;
+  border: 1px solid $brand-default-active;
   display: block;
   padding: 1em;
   & p,ul,li,img,h1,h2,h3,h4,h5,h6{

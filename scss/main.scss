@@ -168,8 +168,13 @@ hr{
 	background-image: linear-gradient(to right, rgba(26, 26, 26, 0.2), rgba(0, 0, 0, 0.75), rgba(26, 26, 26, 0.2));
 	width: 90%;
 }
-ul li {
-	margin-left: 5%;
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin-left: 20px;
 }
 .square {
 	list-style-type: square;
