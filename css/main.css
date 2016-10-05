@@ -176,15 +176,78 @@ table {
   .header h1, .header h2, .header h3, .header h4, .header h5, .header h6 {
     text-align: center; }
 
-.jombotron {
+.jumbotron {
   height: auto;
   width: 100%;
   background-color: #d9d9d9;
   border: 1px solid #8c8c8c;
   display: block;
   padding: 1em; }
-  .jombotron title, .jombotron h1, .jombotron h2, .jombotron h3, .jombotron h4, .jombotron h5, .jombotron h6 {
+  .jumbotron title, .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 {
     line-height: 3; }
+
+.navbar ul {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: auto; }
+  .navbar ul > li {
+    padding: 1em; }
+    .navbar ul > li > a {
+      color: black;
+      text-decoration: none; }
+    .navbar ul > li:hover {
+      text-decoration: underline; }
+  .navbar ul .active {
+    font-weight: bold; }
+  .navbar ul .disabled {
+    cursor: default;
+    pointer-events: none; }
+  .navbar ul .separator {
+    height: 40px;
+    width: 2px;
+    margin: auto 5px;
+    overflow: hidden;
+    background-color: #DDD;
+    border-right: 2px solid #FFF; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+  .navbar ul {
+    height: auto; }
+    .navbar ul > li {
+      padding: 1em; }
+      .navbar ul > li > a {
+        color: black;
+        text-decoration: none; }
+      .navbar ul > li:hover {
+        text-decoration: underline; }
+    .navbar ul .active {
+      font-weight: bold; }
+    .navbar ul .disabled {
+      cursor: default;
+      pointer-events: none; }
+    .navbar ul .separator {
+      height: 40px;
+      width: 2px;
+      margin: auto 5px;
+      overflow: hidden;
+      background-color: #DDD;
+      border-right: 2px solid #FFF; }
+  .navbar > .left {
+    order: 1;
+    flex: 1;
+    justify-content: flex-start; }
+  .navbar > .center {
+    order: 2;
+    flex: 1;
+    justify-content: center; }
+  .navbar > .right {
+    order: 3;
+    flex: 1;
+    justify-content: flex-end; }
 
 .breadcrumb {
   padding: 8px 15px;
@@ -359,7 +422,7 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(26, 26, 26, 0.2), rgba(0, 0, 0, 0.75), rgba(26, 26, 26, 0.2));
-  width: 90%; }
+  width: 100%; }
 
 ul {
   list-style-type: none;
