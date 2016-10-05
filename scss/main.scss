@@ -3,11 +3,14 @@
    License: none (public domain)
 */
 @import "variables";
+@import "typo";
 @import "button";
 @import "images";
 @import "tables";
 @import "alert";
 @import "composant";
+
+$body-line-height: 1.5 !default;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -35,7 +38,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: $body-line-height;
 	margin-left: 10px;
 	margin-right: 10px;
 }

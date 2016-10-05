@@ -1,8 +1,10 @@
 @import "variables";
 
+$jombotron-background-color: #d9d9d9 !default;
+$header-border-color: #b3b3b3 !default;
 .header {
     height: auto;
-    border: 1px solid $brand-default-active;
+    border: 1px solid $header-border-color;
     width: 100%;
     display: inline-flex;
     padding: 1em;
@@ -18,16 +20,11 @@
 .jombotron{
   height: auto;
   width: 100%;
-  background-color: $brand-default;
+  background-color: $jombotron-background-color;
   border: 1px solid $brand-default-active;
   display: block;
   padding: 1em;
-  & p,ul,li,img,h1,h2,h3,h4,h5,h6{
-    padding-left: 10px;
-    padding-bottom: 10px;
+  title,h1,h2,h3,h4,h5,h6{
+    line-height: 3;
   }
-  & h1,h2,h3,h4,h5,h6{
-    text-align: center;
-  }
-
 }

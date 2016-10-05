@@ -3,6 +3,24 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
+.text-lowercase {
+  text-transform: lowercase; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
 /* Color */
 /* Font Size */
 /* Padding */
@@ -149,7 +167,7 @@ table {
 
 .header {
   height: auto;
-  border: 1px solid #8c8c8c;
+  border: 1px solid #b3b3b3;
   width: 100%;
   display: inline-flex;
   padding: 1em; }
@@ -161,15 +179,12 @@ table {
 .jombotron {
   height: auto;
   width: 100%;
-  background-color: #b3b3b3;
+  background-color: #d9d9d9;
   border: 1px solid #8c8c8c;
   display: block;
   padding: 1em; }
-  .jombotron p, .jombotron ul, .jombotron li, .jombotron img, .jombotron h1, .jombotron h2, .jombotron h3, .jombotron h4, .jombotron h5, .jombotron h6 {
-    padding-left: 10px;
-    padding-bottom: 10px; }
-  .jombotron h1, .jombotron h2, .jombotron h3, .jombotron h4, .jombotron h5, .jombotron h6 {
-    text-align: center; }
+  .jombotron title, .jombotron h1, .jombotron h2, .jombotron h3, .jombotron h4, .jombotron h5, .jombotron h6 {
+    line-height: 3; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -197,7 +212,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1;
+  line-height: 1.5;
   margin-left: 10px;
   margin-right: 10px; }
 
