@@ -27,14 +27,14 @@ $brand-link-active: #6b00b3 !default;
 /* Font Size */
 $fz-default: 16px !default;
 
-$fz-smal: 0.875rem !default;
+$fz-small: 0.875rem !default;
 
 $fz-large: 1.25rem !default;
 
 /* Padding */
 $pdg-default: 10px 50px !default;
 
-$pdg-smal:0.25rem 0.5rem !default;
+$pdg-small:0.25rem 0.5rem !default;
 
 $pdg-large: 0.75rem 1.5rem!default;
 
@@ -125,16 +125,16 @@ $pdg-large: 0.75rem 1.5rem!default;
 }
 /* Taille des boutons */
 
-.smal{
+.btn-small{
   @extend .btn;
 
   line-height: 0,1;
-  padding: $pdg-smal;
-  font-size: $fz-smal;
+  padding: $pdg-small;
+  font-size: $fz-small;
   border-radius: 0.2rem;
 }
 
-.large{
+.btn-large{
   @extend .btn;
 
   padding: $pdg-large;
@@ -144,7 +144,7 @@ $pdg-large: 0.75rem 1.5rem!default;
 
 /* Apparence des boutons */
 
-.flat{
+.btn-flat{
   @extend .btn;
 
   border: 0;
@@ -152,14 +152,14 @@ $pdg-large: 0.75rem 1.5rem!default;
   margin-left: -5px;
 }
 
-.lg{
+.btn-lg{
   @extend .btn;
 
   width: 100%;
 }
 
 
-.fancy{
+.btn-fancy{
   @extend .btn;
 
   font-family: Arial,sans-serif;

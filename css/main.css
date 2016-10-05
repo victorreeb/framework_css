@@ -24,7 +24,7 @@
 /* Color */
 /* Font Size */
 /* Padding */
-.btn, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link, .smal, .large, .flat, .lg, .fancy {
+.btn, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link, .btn-small, .btn-large, .btn-flat, .btn-lg, .btn-fancy {
   width: auto;
   text-align: center;
   background-color: #b3b3b3;
@@ -34,7 +34,7 @@
   margin-right: 2%;
   padding: 10px 50px;
   color: white; }
-  .btn:active, .btn-primary:active, .btn-secondary:active, .btn-success:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-link:active, .smal:active, .large:active, .flat:active, .lg:active, .fancy:active {
+  .btn:active, .btn-primary:active, .btn-secondary:active, .btn-success:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-link:active, .btn-small:active, .btn-large:active, .btn-flat:active, .btn-lg:active, .btn-fancy:active {
     background-color: #8c8c8c; }
 
 /* Différent boutons */
@@ -75,36 +75,36 @@
     background-color: #6b00b3; }
 
 /* Taille des boutons */
-.smal {
+.btn-small {
   line-height: 0,1;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem; }
 
-.large {
+.btn-large {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
 /* Apparence des boutons */
-.flat {
+.btn-flat {
   border: 0;
   border-radius: 0px;
   margin-left: -5px; }
 
-.lg {
+.btn-lg {
   width: 100%; }
 
-.fancy {
+.btn-fancy {
   font-family: Arial,sans-serif;
   text-align: center;
   background: linear-gradient(#555, #b3b3b3);
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.4); }
-  .fancy:hover {
+  .btn-fancy:hover {
     background: #555;
     background: linear-gradient(#777, #333); }
-  .fancy:active {
+  .btn-fancy:active {
     background: #444;
     background: linear-gradient(#555, #2C2C2C);
     box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba(255, 255, 255, 0.4); }
