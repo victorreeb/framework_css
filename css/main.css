@@ -186,6 +186,24 @@ table {
   .jombotron title, .jombotron h1, .jombotron h2, .jombotron h3, .jombotron h4, .jombotron h5, .jombotron h6 {
     line-height: 3; }
 
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 19px;
+  list-style: none;
+  background-color: #428bca;
+  border-radius: 4px; }
+  .breadcrumb > li {
+    display: inline-block; }
+    .breadcrumb > li > a {
+      color: white;
+      text-decoration: none; }
+      .breadcrumb > li > a:hover {
+        text-decoration: underline; }
+    .breadcrumb > li + li:before {
+      content: "/ ";
+      padding: 0 7px;
+      color: black; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
