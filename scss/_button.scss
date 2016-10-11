@@ -2,6 +2,7 @@
 $brand-default: #b3b3b3 !default;
 $brand-default-active: #8c8c8c !default;
 $brand-color-default: white !default;
+$brand-border-radius: 8px 8px 8px 8px !default;
 
 $brand-primary: #1E90FF !default;
 $brand-primary-active:#337ab7 !default;
@@ -24,18 +25,18 @@ $brand-danger-active:  #a72925 !default;
 $brand-link:  #9900ff !default;
 $brand-link-active: #6b00b3 !default;
 
+$brand-fanzy-font: Arial,sans-serif !default;
+$brand-fanzy-backgrd-hover: linear-gradient( #777, #333) !default;
+$brand-fanzy-bckgrd-active: linear-gradient( #555, #2C2C2C)!default;
+
 /* Font Size */
 $fz-default: 16px !default;
-
 $fz-small: 0.875rem !default;
-
 $fz-large: 1.25rem !default;
 
 /* Padding */
 $pdg-default: 10px 50px !default;
-
 $pdg-small:0.25rem 0.5rem !default;
-
 $pdg-large: 0.75rem 1.5rem!default;
 
 .btn{
@@ -43,7 +44,7 @@ $pdg-large: 0.75rem 1.5rem!default;
   text-align: center;
   background-color: $brand-default;
   font-size: $fz-default;
-  border-radius:8px 8px 8px 8px;
+  border-radius:$brand-border-radius;
   margin-left:2%;
   margin-right:2%;
   padding: $pdg-default;
@@ -162,19 +163,17 @@ $pdg-large: 0.75rem 1.5rem!default;
 .btn-fancy{
   @extend .btn;
 
-  font-family: Arial,sans-serif;
+  font-family: $brand-fanzy-font;
   text-align: center;
   background: linear-gradient( #555, $brand-default);
   text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
   box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
             0 -1px 0 rgba( 255, 255, 255, 0.4);
   &:hover{
-     background: #555;
-     background: linear-gradient( #777, #333);
+     background: $brand-fanzy-backgrd-hover;
   }
   &:active{
-   background: #444;
-   background: linear-gradient( #555, #2C2C2C);
+   background:$brand-fanzy-bckgrd-active;
    box-shadow: 1px 1px 10px black inset,
                0 1px 0 rgba( 255, 255, 255, 0.4);
   }
