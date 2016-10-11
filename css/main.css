@@ -267,6 +267,32 @@ table {
       padding: 0 7px;
       color: black; }
 
+ul.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+
+ul.pagination li {
+  display: inline; }
+
+ul.pagination li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 60px;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  /* Gray */
+  margin: 0 4px; }
+  ul.pagination li a:hover:not(.active) {
+    background-color: #ddd; }
+
+ul.pagination li a.active {
+  background-color: #999999;
+  color: white;
+  border-radius: 60px; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

@@ -1,5 +1,9 @@
 @import "variables";
+//Color Default
+$color-default-black: black !default;
+$color-default-white: white !default;
 
+//Jombotron
 $jombotron-background-color: #d9d9d9 !default;
 $header-border-color: #b3b3b3 !default;
 
@@ -12,7 +16,7 @@ $breadcrumb-bg:                 #428bca !default;
 //** Breadcrumb text color
 $breadcrumb-color:              white !default;
 //** Text color of current page in the breadcrumb
-$breadcrumb-separator-color:       black !default;
+$breadcrumb-separator-color:  $color-default-black !default;
 //** Textual separator for between breadcrumb elements
 $breadcrumb-separator:          "/" !default;
 $font-size-base:          14px !default;
@@ -20,8 +24,15 @@ $line-height-base:        1.4 !default; // 20/14
 $border-radius-base:        4px !default;
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
-
-
+//Pagination
+$pabi-color-gray: #ddd !default;
+$pagi-color:  $color-default-black !default;
+$pagi-padding: 8px 16px !default;
+$pagi-border-radius: 60px !default;
+$pagi-border: 1px solid $pabi-color-gray !default;
+$pagi-margin: 0 4px !default;
+$pagi-bck-color: #999999!default;
+$pagi-active-color: $color-default-white !default;
 
 .header {
     height: auto;
@@ -154,12 +165,41 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
       }
     }
     + li:before {
-
       $nbsp: "\00a0";
       content: "#{$breadcrumb-separator}#{$nbsp}";
       padding: 0 7px;
       color: $breadcrumb-separator-color;
     }
   }
+}
 
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+  display: inline;
+}
+
+ul.pagination li a {
+    color: $pagi-color;
+    float: left;
+    padding: $pagi-padding;
+    text-decoration: none;
+    border-radius:$pagi-border-radius;
+    transition: background-color .3s;
+    border: $pagi-border; /* Gray */
+    margin: $pagi-margin;
+
+    &:hover:not(.active){
+      background-color: $pabi-color-gray;
+    }
+}
+
+ul.pagination li a.active {
+  background-color: $pagi-bck-color;
+  color: $pagi-active-color;
+  border-radius: $pagi-border-radius;
 }
