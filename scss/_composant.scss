@@ -57,94 +57,23 @@ $pagi-active-color: $color-default-white !default;
   title,h1,h2,h3,h4,h5,h6{
     line-height: 3;
   }
-
 }
-.navbar{
-  ul{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    height: auto;
-    > li {
-      padding: 1em;
 
-      > a{
-        color:black;
-        text-decoration: none;
-      }
-      &:hover{
-        text-decoration: underline;
-      }
-    }
-    .active{
-      font-weight: bold;
-    }
-    .disabled{
-      cursor: default;
-      pointer-events: none;
-    }
-    .separator{
-      height: 40px;
-      width: 2px;
-      margin: auto 5px;
-      overflow: hidden;
-      background-color: #DDD;
-      border-right: 2px solid #FFF;
-    }
-  }
+.active{
+  font-weight: bold;
 }
-// .nav-right{
-//   display: flex;
-//   align-items: flex-end;
-// }
-.navbar{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  ul{
-    height: auto;
-    > li {
-      padding: 1em;
+.disabled{
+  cursor: default;
+  pointer-events: none;
+}
 
-      > a{
-        color:black;
-        text-decoration: none;
-      }
-      &:hover{
-        text-decoration: underline;
-      }
-    }
-    .active{
-      font-weight: bold;
-    }
-    .disabled{
-      cursor: default;
-      pointer-events: none;
-    }
-    .separator{
-      height: 40px;
-      width: 2px;
-      margin: auto 5px;
-      overflow: hidden;
-      background-color: #DDD;
-      border-right: 2px solid #FFF;
-    }
-  }
-  > .left{
-    order: 1;
-    flex: 1;
-    justify-content: flex-start;
-  }
-  > .center{
-    order: 2;
-    flex: 1;
-    justify-content: center;
-  }
-  > .right{
-    order: 3;
-    flex: 1;
-    justify-content: flex-end;
-  }
+.separator{
+  height: 40px;
+  width: 2px;
+  margin: auto 5px;
+  overflow: hidden;
+  background-color: #DDD;
+  border-right: 2px solid #FFF;
 }
 
 
