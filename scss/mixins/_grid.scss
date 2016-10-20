@@ -1,0 +1,31 @@
+// Grid
+
+@mixin make-container($gutter){
+  padding-left: ($gutter/2);
+  padding-right: ($gutter/2);
+}
+
+@mixin make-row(){
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  // flex: 0 0 percentage(100% / $columns);
+  // max-width: percentage(100% / $columns);
+}
+
+@mixin make-col($columns, $gutter){
+  @for $i from 1 through $columns{
+    .col-#{$i}{
+      width: (100% / $columns) * $i;
+    }
+  }
+}
+
+@mixin make-col-offset($columns){
+  @for $i from 1 through $columns{
+    .col-offset-#{$i}{
+      margin-left: percentage(100 / $columns);
+    }
+  }
+}
