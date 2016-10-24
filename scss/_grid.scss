@@ -1,0 +1,16 @@
+@import "mixins/grid";
+
+$gutter: 1% !default;
+$columns: 12 !default;
+
+.container{
+  @include make-container($gutter);
+}
+
+.row{
+  @include make-row();
+}
+
+@include make-col($columns, $gutter);
+
+@include make-col-offset($columns);
