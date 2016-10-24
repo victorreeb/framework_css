@@ -1,3 +1,5 @@
+@import "mixins/buttons";
+
 /* Color */
 $brand-default: #b3b3b3 !default;
 $brand-default-active: #8c8c8c !default;
@@ -36,111 +38,96 @@ $fz-large: 1.25rem !default;
 
 /* Padding */
 $pdg-default: 10px 50px !default;
-$pdg-small:0.25rem 0.5rem !default;
-$pdg-large: 0.75rem 1.5rem!default;
+
+$pdg-small-y:0.5rem !default;
+$pdg-small-x:0.25rem !default;
+$pdg-small:$pdg-small-x $pdg-small-y !default;
+
+$pdg-large-y: 1.5rem !default;
+$pdg-large-x: 0.75rem !default;
+$pdg-large: $pdg-large-x $pdg-large-y !default;
+
+/* Margin */
+$margin-left: 2% !default;
+$margin-right: 2% !default;
+
+/* Border radius */
+$border-radius-small: 0.2rem !default;
+$border-radius-large: 0.3rem !default;
+$border-radius-flat: 0px !default;
+
+/* line-height */
+$line-height-small: 0.1 !default;
+$line-height-large: 0,6 !default;
+
+/* button fancy */
+$backgroud-fancy: linear-gradient( #555, $brand-default) !default;
+$text-shadow-fancy: 0px 1px 0px rgba( 255, 255, 255, 0.2) !default;
+$box-shadow-fancy: 0 0 5px rgba( 0, 0, 0, 0.5),
+          0 -1px 0 rgba( 255, 255, 255, 0.4) !default;
+$box-shadow-fancy-active:  1px 1px 10px black inset,
+            0 1px 0 rgba( 255, 255, 255, 0.4)!default;
+
+
 
 .btn{
-  width: auto;
-  text-align: center;
-  background-color: $brand-default;
-  font-size: $fz-default;
-  border-radius:$brand-border-radius;
-  margin-left:2%;
-  margin-right:2%;
-  padding: $pdg-default;
-  color : $brand-color-default;
-  &:active{
-    background-color: $brand-default-active;
-  }
+  @include button-btn($brand-color-default, $brand-default, $fz-default, $pdg-default, $margin-left, $margin-right, $brand-border-radius,  $brand-default-active);
 }
 
 /* Différent boutons */
-
 .btn-primary {
   @extend .btn;
-  background-color: $brand-primary;
 
-  &:active{
-    background-color:$brand-primary-active;
-  }
+  @include button-color-active($brand-primary, $brand-primary-active);
 }
 
 .btn-secondary {
   @extend .btn;
-  background-color: $brand-secondary;
 
-  &:active{
-    background-color: $brand-secondary-active;
-  }
+  @include button-color-active($brand-secondary, $brand-secondary-active);
 }
 
 .btn-success{
   @extend .btn;
-  background-color: $brand-success;
 
-  &:active{
-    background-color: $brand-success-active;
-  }
+  @include button-color-active($brand-success, $brand-success-active);
 }
 
 .btn-info{
   @extend .btn;
 
-  background-color: $brand-info;
-
-  &:active{
-    background-color: $brand-info-active;
-  }
+  @include button-color-active($brand-info, $brand-info-active);
 }
 
 .btn-warning{
   @extend .btn;
 
-  background-color:  $brand-warning;
-
-  &:active{
-    background-color: 	 $brand-warning-active;
-    color:  $brand-color-default;
-  }
-
+  @include button-color-active-color($brand-warning, $brand-warning-active, $brand-color-default);
 }
 
 .btn-danger{
   @extend .btn;
 
-  background-color: $brand-danger;
-
-  &:active{
-    background-color: $brand-danger-active;
-  }
+  @include button-color-active($brand-danger, $brand-danger-active);
 }
 
 .btn-link{
   @extend .btn;
 
-  background-color: $brand-link;
-
-  &:active{
-    background-color: $brand-link-active;
-  }
+  @include button-color-active($brand-link, $brand-link-active);
 }
-/* Taille des boutons */
 
+/* Taille des boutons */
 .btn-small{
   @extend .btn;
 
-  line-height: 0,1;
-  padding: $pdg-small;
-  font-size: $fz-small;
-  border-radius: 0.2rem;
+  @include button-size($pdg-small-x, $pdg-small-y, $fz-small, $border-radius-small, $line-height-small);
 }
 
 .btn-large{
   @extend .btn;
 
-  padding: $pdg-large;
-  font-size: $fz-large;
-  border-radius: 0.3rem;
+  @include button-size($pdg-large-x, $pdg-large-y, $fz-large, $border-radius-large, $line-height-large);
 }
 
 /* Apparence des boutons */
@@ -148,33 +135,30 @@ $pdg-large: 0.75rem 1.5rem!default;
 .btn-flat{
   @extend .btn;
 
-  border: 0;
-  border-radius: 0px;
-  margin-left: -5px;
+  @include button-flat(0, 0px, -5px);
 }
 
 .btn-lg{
   @extend .btn;
 
-  width: 100%;
+  @include button-lg(100%);
 }
 
 
 .btn-fancy{
   @extend .btn;
 
-  font-family: $brand-fanzy-font;
-  text-align: center;
-  background: linear-gradient( #555, $brand-default);
-  text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
-  box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
-            0 -1px 0 rgba( 255, 255, 255, 0.4);
-  &:hover{
-     background: $brand-fanzy-backgrd-hover;
-  }
-  &:active{
-   background:$brand-fanzy-bckgrd-active;
-   box-shadow: 1px 1px 10px black inset,
-               0 1px 0 rgba( 255, 255, 255, 0.4);
-  }
+  @include button-fancy($brand-fanzy-font, center, $backgroud-fancy, $text-shadow-fancy, $box-shadow-fancy, $brand-fanzy-backgrd-hover, $brand-fanzy-bckgrd-active, $box-shadow-fancy-active);
+}
+
+.btn-mixxin-variant{
+  @extend .btn;
+
+  @include button-variant ($brand-color-default, $brand-default, $brand-default);
+}
+
+.bt-mixin-color {
+  @extend .btn;
+
+  @include button-color($brand-color-default);
 }
