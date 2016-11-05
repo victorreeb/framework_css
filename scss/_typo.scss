@@ -1,18 +1,25 @@
+$text-left-text-align: left !default;
+$text-right-text-align: right !default;
+$text-center-text-align: center !default;
+$text-justify-text-align: justify !default;
+$text-lowercase-text-transform: lowercase !default;
+$text-uppercase-text-transform: uppercase !default;
+
 .text-left{
-	text-align: left;
+	text-align: $text-left-text-align;
 }
 .text-right{
-	text-align: right;
+	text-align: $text-right-text-align;
 }
 .text-center{
-	text-align: center;
+	text-align: $text-center-text-align;
 }
 .text-justify{
-	text-align: justify;
+	text-align: $text-justify-text-align;
 }
 .text-lowercase{
-	text-transform: lowercase;
+	text-transform: $text-lowercase-text-transform;
 }
 .text-uppercase{
-	text-transform: uppercase;
+	text-transform: $text-uppercase-text-transform;
 }

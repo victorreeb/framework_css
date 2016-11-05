@@ -1,5 +1,9 @@
+$img-responsive-max-width: 100% !default;
+$img-responsive-height: auto !default;
+$img-responsive-display: block !default;
+
 .img-responsive{
-  max-width: 100%;
-  height: auto;
-  display: block;
+  max-width: $img-responsive-max-width;
+  height: $img-responsive-height;
+  display: $img-responsive-display;
 }
