@@ -1,38 +1,38 @@
-@import "variables";
+@import "mixins/alert";
+
+$v-alert-width: 100%      !default;
+$v-alert-height: auto     !default;
+$v-alert-display: block   !default;
+$v-alert-color: white     !default;
+$v-alert-padding: 1.5em   !default;
+$v-alert-font-weight: bold!default;
+
 
 .alert{
-  width: 100%;
-  height: auto;
-  display:block;
-  color: white;
-  padding: 1.5em;
-  font-weight: bold;
+  @include alert($v-alert-width, $v-alert-height, $v-alert-display, $v-alert-color, $v-alert-padding, $v-alert-font-weight);
 }
 .alert-default{
   @extend .alert;
-  background-color: $brand-default;
+  @include alert-baccolor($brand-default);
 }
 .alert-primary{
   @extend .alert;
-  background-color: $brand-primary;
+  @include alert-baccolor($brand-primary);
 }
 .alert-success{
   @extend .alert;
-  background-color: $brand-success;
+  @include alert-baccolor($brand-success);
 }
-// .alert-secondary{
-//   @extend .alert;
-//   background-color: $brand-secondary;
-// }
+
 .alert-info{
   @extend .alert;
-  background-color: $brand-info;
+  @include alert-baccolor($brand-info);
 }
 .alert-warning{
   @extend .alert;
-  background-color: $brand-warning;
+  @include alert-baccolor($brand-warning);
 }
 .alert-danger{
   @extend .alert;
-  background-color: $brand-danger;
+  @include alert-baccolor($brand-danger);
 }
