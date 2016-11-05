@@ -1,0 +1,13 @@
+
+@mixin alert($v-width, $v-height, $v-display, $v-color, $v-padding, $v-font){
+  width: $v-width;
+  height: $v-height;
+  display: $v-display;
+  color: $v-color;
+  padding: $v-padding;
+  font-weight: $v-font;
+}
+
+@mixin alert-baccolor($v-color) {
+  background-color: $v-color;
+}
