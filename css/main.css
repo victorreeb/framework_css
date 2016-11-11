@@ -313,88 +313,102 @@ ul.pagination li a.active {
   color: white;
   border-radius: 60px; }
 
-.container {
-  padding-left: 0.5%;
-  padding-right: 0.5%; }
-
 .row {
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 0.5rem;
   display: flex;
-  flex-wrap: nowrap; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #cccccc;
+  background-color: rgba(0, 0, 0, 0.1); }
 
-.col-1 {
-  width: 8.33333%; }
+.col {
+  flex: 1 1 8%;
+  margin: 0 0 0.5rem 0;
+  padding: 0.5em 10px;
+  box-sizing: border-box;
+  background-color: #999999;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-clip: content-box;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
 
-.col-2 {
-  width: 16.66667%; }
+/* nested grids */
+.row .row, .row.nested {
+  flex: 1 1 auto;
+  margin-top: -0.5em; }
 
-.col-3 {
-  width: 25%; }
+/* full width grids */
+.row.wide-fit {
+  margin-left: -10px;
+  margin-right: -10px; }
 
-.col-4 {
-  width: 33.33333%; }
+/* center grids */
+.row.center {
+  justify-content: center; }
 
-.col-5 {
-  width: 41.66667%; }
+.center .col {
+  flex-grow: 0;
+  flex-shrink: 0; }
 
-.col-6 {
-  width: 50%; }
+/* columns widths */
+.col-span-1 {
+  flex-basis: 8.33333%; }
 
-.col-7 {
-  width: 58.33333%; }
+.col-span-2 {
+  flex-basis: 16.66667%; }
 
-.col-8 {
-  width: 66.66667%; }
+.col-span-3 {
+  flex-basis: 25%; }
 
-.col-9 {
-  width: 75%; }
+.col-span-4 {
+  flex-basis: 33.33333%; }
 
-.col-10 {
-  width: 83.33333%; }
+.col-span-5 {
+  flex-basis: 41.66667%; }
 
-.col-11 {
-  width: 91.66667%; }
+.col-span-6 {
+  flex-basis: 50%; }
 
-.col-12 {
-  width: 100%; }
+.col-span-7 {
+  flex-basis: 58.33333%; }
 
-.col-offset-1 {
-  margin-left: 8.33333%; }
+.col-span-8 {
+  flex-basis: 66.66667%; }
 
-.col-offset-2 {
-  margin-left: 16.66667%; }
+.col-span-9 {
+  flex-basis: 75%; }
 
-.col-offset-3 {
-  margin-left: 25%; }
+.col-span-10 {
+  flex-basis: 83.33333%; }
 
-.col-offset-4 {
-  margin-left: 33.33333%; }
+.col-span-11 {
+  flex-basis: 91.66667%; }
 
-.col-offset-5 {
-  margin-left: 41.66667%; }
+.col-span-12 {
+  flex-basis: 100%; }
 
-.col-offset-6 {
-  margin-left: 50%; }
+.fixed-width {
+  flex: 0 0 500px;
+  background-color: rgba(255, 0, 0, 0.1) !important; }
 
-.col-offset-7 {
-  margin-left: 58.33333%; }
+@media all and (max-width: 568px) {
+  .col-span-1,
+  .col-span-2,
+  .col-span-3,
+  .col-span-4,
+  .col-span-5 {
+    flex-basis: 50%; }
 
-.col-offset-8 {
-  margin-left: 66.66667%; }
+  .col-span-6,
+  .col-span-7,
+  .col-span-8,
+  .col-span-9,
+  .col-span-10,
+  .col-span-11 {
+    flex-basis: 100%; }
 
-.col-offset-9 {
-  margin-left: 75%; }
-
-.col-offset-10 {
-  margin-left: 83.33333%; }
-
-.col-offset-11 {
-  margin-left: 91.66667%; }
-
-.col-offset-12 {
-  margin-left: 100%; }
-
+  .nested .col {
+    flex-basis: 100%; } }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

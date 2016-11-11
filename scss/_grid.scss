@@ -2,15 +2,136 @@
 
 $gutter: 1% !default;
 $columns: 12 !default;
+$size: 100% !default;
 
-.container{
-  @include make-container($gutter);
-}
+// .container{
+//   @include make-container($gutter);
+// }
 
-.row{
+// .row{
+//   @include make-row();
+// }
+//
+//
+// @include make-col($columns, $gutter);
+//
+// @include make-col-offset($columns);
+
+.row {
   @include make-row();
 }
 
-@include make-col($columns, $gutter);
+.col {
+  @include make-col();
+}
 
-@include make-col-offset($columns);
+/* nested grids */
+.row .row, .row.nested {
+  flex: 1 1 auto;
+  margin-top: -0.5em;
+}
+
+/* full width grids */
+.row.wide-fit {
+  @include make-row-wide-fit();
+}
+
+/* center grids */
+.row.center {
+  justify-content: center;
+}
+
+.center .col {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* columns widths */
+.col-span-1 {
+  // 8.3333%;
+  @include make-col-span($size, 1, $columns);
+}
+
+.col-span-2 {
+  //16.6666%;
+  @include make-col-span($size, 2, $columns);
+}
+
+.col-span-3 {
+  //25%;
+  @include make-col-span($size, 3, $columns);
+}
+
+.col-span-4 {
+  //33.3333%;
+  @include make-col-span($size, 4, $columns);
+}
+
+.col-span-5 {
+  //41.6666%;
+  @include make-col-span($size, 5, $columns);
+}
+
+.col-span-6 {
+  //50%;
+  @include make-col-span($size, 6, $columns);
+}
+
+.col-span-7 {
+  //58.3333%;
+  @include make-col-span($size, 7, $columns);
+}
+
+.col-span-8 {
+  //66.6666%;
+  @include make-col-span($size, 8, $columns);
+}
+
+.col-span-9 {
+  //75%;
+  @include make-col-span($size, 9, $columns);
+}
+
+.col-span-10 {
+  //83.3333%;
+  @include make-col-span($size, 10, $columns);
+}
+
+.col-span-11 {
+  //91.6666%;
+  @include make-col-span($size, 11, $columns);
+}
+
+.col-span-12 {
+  //100%;
+  @include make-col-span($size, 12, $columns);
+}
+
+.fixed-width {
+  flex: 0 0 500px;
+  background-color: rgba(255,0,0,0.1) !important;
+}
+
+@media all and (max-width: 568px) {
+  .col-span-1,
+  .col-span-2,
+  .col-span-3,
+  .col-span-4,
+  .col-span-5 {
+    flex-basis: 50%;
+  }
+
+  .col-span-6,
+  .col-span-7,
+  .col-span-8,
+  .col-span-9,
+  .col-span-10,
+  .col-span-11 {
+    flex-basis: 100%;
+  }
+
+  .nested .col {
+    flex-basis: 100%;
+  }
+
+}

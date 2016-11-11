@@ -1,31 +1,65 @@
-// Grid
+// // Grid
+//
+// @mixin make-container($gutter){
+//   padding-left: ($gutter/2);
+//   padding-right: ($gutter/2);
+// }
+//
+// @mixin make-row(){
+//   margin-left: auto;
+//   margin-right: auto;
+//   display: flex;
+//   flex-wrap: nowrap; // empile verticalement si trop petit
+//   // flex: 0 0 percentage(100% / $columns);
+//   // max-width: percentage(100% / $columns);
+// }
+//
+// @mixin make-col($columns, $gutter){
+//   @for $i from 1 through $columns{
+//     .col-#{$i}{
+//       width: ((100% / $columns) * $i);
+//     }
+//   }
+// }
+//
+// @mixin make-col-offset($columns){
+//   @for $i from 1 through $columns{
+//     .col-offset-#{$i}{
+//       margin-left: (100% / $columns) * $i;
+//     }
+//   }
+// }
 
-@mixin make-container($gutter){
-  padding-left: ($gutter/2);
-  padding-right: ($gutter/2);
+@mixin make-col-span($size, $columns, $gridcolumns) {
+  flex-basis: ($size)*($columns / $gridcolumns);
 }
 
-@mixin make-row(){
-  margin-left: auto;
-  margin-right: auto;
+
+@mixin make-row() {
+  margin-top: 0.5rem;
   display: flex;
-  flex-wrap: nowrap; // empile verticalement si trop petit
-  // flex: 0 0 percentage(100% / $columns);
-  // max-width: percentage(100% / $columns);
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  text-align: center;
+
+  background-color: #cccccc;
+  background-color: rgba(0,0,0,0.1);
 }
 
-@mixin make-col($columns, $gutter){
-  @for $i from 1 through $columns{
-    .col-#{$i}{
-      width: ((100% / $columns) * $i);
-    }
-  }
+@mixin make-col() {
+  flex: 1 1 8%;
+  margin: 0 0 0.5rem 0;
+  padding: 0.5em 10px;
+  box-sizing: border-box;
+
+  background-color: #999999;
+  background-color: rgba(0,0,0,0.2);
+  background-clip: content-box;
+  border: 1px solid rgba(0,0,0,0.1);
 }
 
-@mixin make-col-offset($columns){
-  @for $i from 1 through $columns{
-    .col-offset-#{$i}{
-      margin-left: (100% / $columns) * $i;
-    }
-  }
+@mixin make-row-wide-fit() {
+  margin-left: -10px;
+  margin-right: -10px;
 }
