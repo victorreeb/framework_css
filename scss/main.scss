@@ -61,7 +61,12 @@ table {
 }
 
 /*-----------------------------------------------------------------------------*/
-
+body{
+	width: -webkit-calc(100% - 40px);
+	width: -moz-calc(100% - 40px);
+	width: calc(100% - 40px);
+	margin: 0 auto;
+}
 h1,h2,h3,h4,h5,h6{
   color: black;
   font-weight: bold;

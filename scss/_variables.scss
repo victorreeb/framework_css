@@ -1,45 +1,180 @@
-// Color
-// $brand-default: #b3b3b3;
-// $brand-default-active: #8c8c8c;
-//
-// $brand-primary: #1E90FF;
-// $brand-primary-active:#337ab7;
-//
-//
-// $brand-secondary: #1a1aff;
-// $brand-secondary-active: #0000b3;
-//
-//
-// $brand-success: #5cb85c;
-// $brand-success-active: #3e8e3e;
-//
-//
-// $brand-info:    #5bc0de;
-// $brand-info-active:  #279bbe;x
-//
-// $brand-warning: #f0ad4e;
-// $brand-warning-active:  #d38312;
-//
-// $brand-danger:  #d9534f;
-// $brand-danger-active:  #a72925;
-//
-// $brand-link:  #9900ff;
-// $brand-link-active: #6b00b3;
+//Variable
 
-// Font Size
-//$fz-default: 16px;
-//
-//$fz-small: 0.875rem;
-//
-//$fz-large: 1.25rem;
 
-// Padding
-//$pdg-default: 10px 50px;
-//
-//$pdg-small:0.25rem 0.5rem;
-//
-//$pdg-large: 0.75rem 1.5rem;
+//================== Alert ==================
 
-// $jombotron-background-color: #d9d9d9;
+// $v-alert-width: 100%      !default;
+// $v-alert-height: auto     !default;
+// $v-alert-display: block   !default;
+// $v-alert-color: white     !default;
+// $v-alert-padding: 1.5em   !default;
+// $v-alert-font-weight: bold!default;
 
-// $body-line-height: 1.5;
+//================== Button ==================
+
+/* Color */
+// $brand-default: #b3b3b3 !default;
+// $brand-default-active: #8c8c8c !default;
+// $brand-color-default: white !default;
+// $brand-border-radius: 8px 8px 8px 8px !default;
+//
+// $brand-primary: #1E90FF !default;
+// $brand-primary-active:#337ab7 !default;
+//
+// $brand-secondary: #1a1aff !default;
+// $brand-secondary-active: #0000b3 !default;
+//
+// $brand-success: #5cb85c !default;
+// $brand-success-active: #3e8e3e !default;
+//
+// $brand-info:    #5bc0de !default;
+// $brand-info-active:  #279bbe !default;
+//
+// $brand-warning: #f0ad4e !default;
+// $brand-warning-active:  #d38312 !default;
+//
+// $brand-danger:  #d9534f !default;
+// $brand-danger-active:  #a72925 !default;
+//
+// $brand-link:  #9900ff !default;
+// $brand-link-active: #6b00b3 !default;
+//
+// $brand-fanzy-font: Arial,sans-serif !default;
+// $brand-fanzy-backgrd-hover: linear-gradient( #777, #333) !default;
+// $brand-fanzy-bckgrd-active: linear-gradient( #555, #2C2C2C)!default;
+//
+// /* Font Size */
+// $fz-default: 16px !default;
+// $fz-small: 0.875rem !default;
+// $fz-large: 1.25rem !default;
+//
+// /* Padding */
+// $pdg-default: 10px 50px !default;
+//
+// $pdg-small-y:0.5rem !default;
+// $pdg-small-x:0.25rem !default;
+// $pdg-small:$pdg-small-x $pdg-small-y !default;
+//
+// $pdg-large-y: 1.5rem !default;
+// $pdg-large-x: 0.75rem !default;
+// $pdg-large: $pdg-large-x $pdg-large-y !default;
+//
+// /* Margin */
+// $margin-left: 2% !default;
+// $margin-right: 2% !default;
+//
+// /* Border radius */
+// $border-radius-small: 0.2rem !default;
+// $border-radius-large: 0.3rem !default;
+// $border-radius-flat: 0px !default;
+//
+// /* line-height */
+// $line-height-small: 0.1 !default;
+// $line-height-large: 0,6 !default;
+//
+// /* button fancy */
+// $backgroud-fancy: linear-gradient( #555, $brand-default) !default;
+// $text-shadow-fancy: 0px 1px 0px rgba( 255, 255, 255, 0.2) !default;
+// $box-shadow-fancy: 0 0 5px rgba( 0, 0, 0, 0.5),
+//           0 -1px 0 rgba( 255, 255, 255, 0.4) !default;
+// $box-shadow-fancy-active:  1px 1px 10px black inset,
+//             0 1px 0 rgba( 255, 255, 255, 0.4)!default;
+
+
+//================== Composant ==================
+
+// //Color Default
+// $color-default-black: black !default;
+// $color-default-white: white !default;
+//
+// //Jombotron
+// $jombotron-background-color: #d9d9d9 !default;
+// $header-border-color: #b3b3b3 !default;
+//
+//
+// // breadcrumb
+// $breadcrumb-padding-vertical:   8px !default;
+// $breadcrumb-padding-horizontal: 15px !default;
+// //** Breadcrumb background color
+// $breadcrumb-bg:                 #428bca !default;
+// //** Breadcrumb text color
+// $breadcrumb-color:              white !default;
+// //** Text color of current page in the breadcrumb
+// $breadcrumb-separator-color:  $color-default-black !default;
+// //** Textual separator for between breadcrumb elements
+// $breadcrumb-separator:          "/" !default;
+// $font-size-base:          14px !default;
+// $line-height-base:        1.4 !default; // 20/14
+// $border-radius-base:        4px !default;
+// $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+//
+// //Pagination
+// $pabi-color-gray: #ddd !default;
+// $pagi-color:  $color-default-black !default;
+// $pagi-padding: 8px 16px !default;
+// $pagi-border-radius: 60px !default;
+// $pagi-border: 1px solid $pabi-color-gray !default;
+// $pagi-margin: 0 4px !default;
+// $pagi-bck-color: #999999!default;
+// $pagi-active-color: $color-default-white !default;
+
+
+//================== Grid ==================
+
+// $gutter: 1% !default;
+// $columns: 12 !default;
+// $size: 100% !default;
+// $grid-color: #cccccc !default;
+// $grid-color-rba:rgba(0,0,0,0.1);
+//
+// $col-color: #999999 !default;
+// $col-color-rba: rgba(0,0,0,0.2)!default;
+// $border-col: 1px solid rgba(0,0,0,0.1)!default;
+
+//================== images ==================
+
+//
+// $img-responsive-max-width: 100% !default;
+// $img-responsive-height: auto !default;
+// $img-responsive-display: block !default;
+//
+
+//================== Table ==================
+//
+// /* table */
+// $table-width: 90% !default;
+// $table-margin-top: 10px !default;
+// $table-margin-bottom: 10px !default;
+//
+// /* th */
+// $table-th-font-weight: bold !default;
+// $table-th-padding: 15px !default;
+// $table-th-text-align: center !default;
+// $table-th-border-size: 1px !default;
+// $table-th-border-type: solid !default;
+// $table-th-border-color: #ddd !default;
+// $table-td-padding: 15px !default;
+// $table-td-border-size: 1px !default;
+// $table-td-border-type: solid !default;
+// $table-td-border-color: #ddd !default;
+//
+// /* table striped */
+// $table-striped-tr-nth-child-background-color: #F5F5DC !default;
+//
+// /* table selected */
+// $table-selected-background-color: #555 !default;
+// $table-selected-color: white !default;
+//
+// /* table hover */
+// $table-td-hover-background-color: #C0C0C0 !default;
+// $table-td-hover-color: black !default;
+//
+
+//================== Typo ==================
+
+// $text-left-text-align: left !default;
+// $text-right-text-align: right !default;
+// $text-center-text-align: center !default;
+// $text-justify-text-align: justify !default;
+// $text-lowercase-text-transform: lowercase !default;
+// $text-uppercase-text-transform: uppercase !default;

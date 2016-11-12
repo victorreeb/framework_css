@@ -4,6 +4,7 @@
 @mixin button-btn($color, $background, $font-size, $padding, $margin-left, $margin-right, $border-radius, $acti-background) {
   width: auto;
   text-align: center;
+  box-sizing: border-box;
 
   color : $color;
   background-color: $background;
@@ -117,6 +118,7 @@
 
 @mixin button-lg($width) {
   width: $width;
+  
 }
 
 @mixin button-fancy($ft, $talign, $color, $tshadow, $boxshadow, $colorHover, $colorActive, $boxshadowActive) {

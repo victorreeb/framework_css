@@ -1,5 +1,6 @@
 
 @mixin alert($v-width, $v-height, $v-display, $v-color, $v-padding, $v-font){
+  box-sizing: border-box;
   width: $v-width;
   height: $v-height;
   display: $v-display;
