@@ -5,6 +5,80 @@ $text-justify-text-align: justify !default;
 $text-lowercase-text-transform: lowercase !default;
 $text-uppercase-text-transform: uppercase !default;
 
+$h-color: black !default;
+$h-font-family: 'Open Sans', Verdana, sans-serif !default;
+
+$h1-font-size: 2em !default;
+$h2-font-size: 1.8em !default;
+$h3-font-size: 1.6em !default;
+$h4-font-size: 1.4em !default;
+$h5-font-size: 1.2em !default;
+$h6-font-size: 1em !default;
+
+$small-color: grey !default;
+$small-font-size: 0.8em !default;
+
+$p-line-height: inherit !default;
+
+$mark-bcg-colr: yellow !default;
+$mark-color: black !default;
+
+$del-text-decoration: line-through !default;
+
+$ins-text-decoration: underline !default;
+
+$ul-text-decoration: underline !default;
+
+$strong-font-weight: bold !default;
+
+$em-font-style: italic !default;
+
+$abbr-text-decoration: underline !default;
+$abbr-text-decoration-style: dotted !default;
+
+$blockquote-background-color: #f9f9f9 !default;
+$blockquote-border: 1px solid #ccc !default;
+$blockquote-border-left: 10px solid #ccc !default;
+$blockquote-margin: 1.5em 10px !default;
+$blockquote-padding: 0.5em 10px !default;
+$blockquote-quotes: "\201C""\201D""\2018""\2016" !default;
+$blockquote-font-style: italic !default;
+
+$blockquote-b-color: #ccc !default;
+$blockquote-b-content: open-quote !default;
+$blockquote-b-font-size: 4em !default;
+$blockquote-b-line-height: 0em !default;
+$blockquote-b-margin-right: 0.25em !default;
+$blockquote-b-vertical-align: -0.4em !default;
+
+$blockquote-p-display: inline !default;
+
+$code-background-color: #1B2426 !default;
+$code-border: 1px solid #ccc !default;
+$code-color: white !default;
+$code-display: block !default;
+$code-padding: 0.5em 10px !default;
+$code-margin: 1.5em 10px !default;
+
+$pre-padding:  0.5em 10px !default;
+$pre-margin: 1.5em 10px !default;
+$pre-word-wrap: break-word !default;
+$pre-white-space: pre-wrap !default;
+
+
+$kbd-back-color: #f4f7f8 !default;
+$kbd-border-radius: 3px !default;
+$kbd-border: 1px solid #b4b4b4 !default;
+$kbd-box-shadow:  0 1px 1px rgba(0,0,0,.2),0 2px 0 0 rgba(255,255,255,.7) inset !default;
+$kbd-display: inline-block !default;
+$kbd-font-family: Consolas,"Liberation Mono",Courier,monospace !default;
+$kbd-font-size: .85em !default;
+$kbd-font-weight : 600 !default;
+$kbd-opacity:  .8 !default;
+$kbd-line-height: inherit !default;
+$kbd-padding: 2px 4px !default;
+$kbd-white-space: nowrap !default;
+
 .text-left{
 	text-align: $text-left-text-align;
 }
@@ -22,4 +96,110 @@ $text-uppercase-text-transform: uppercase !default;
 }
 .text-uppercase{
 	text-transform: $text-uppercase-text-transform;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: $h-color;
+  font-family: $h-font-family;
+}
+h1{
+	font-size: $h1-font-size;
+}
+h2{
+	font-size: $h2-font-size;
+}
+h3{
+	font-size: $h3-font-size;
+}
+h4{
+	font-size: $h4-font-size;
+}
+h5{
+	font-size: $h5-font-size;
+}
+h6{
+	font-size: $h6-font-size;
+}
+small{
+	font-size: $small-font-size;
+	color: $small-color;
+}
+.small{
+	font-size: $small-font-size;
+	color: $small-color;
+}
+p {
+	line-height: $p-line-height;
+}
+mark{
+	background-color: $mark-bcg-colr;
+	color: $mark-color;
+}
+del{
+	text-decoration: $del-text-decoration;
+}
+ins{
+	text-decoration: $ins-text-decoration;
+}
+u{
+	text-decoration: $ul-text-decoration;
+}
+strong{
+	font-weight: $strong-font-weight;
+}
+em{
+	font-style: $em-font-style;
+}
+abbr{
+	text-decoration: $abbr-text-decoration;
+	text-decoration-style: $abbr-text-decoration-style;
+}
+
+blockquote {
+  background-color: $blockquote-background-color;
+	border: $blockquote-border;
+  border-left: $blockquote-border-left;
+  margin: $blockquote-margin;
+  padding: $blockquote-padding;
+  quotes: $blockquote-quotes;
+	font-style: $blockquote-font-style;
+}
+blockquote::before {
+  color: $blockquote-b-color;
+  content: $blockquote-b-content;
+  font-size: $blockquote-b-font-size;
+  line-height: $blockquote-b-line-height;
+  margin-right: $blockquote-b-margin-right;
+  vertical-align: $blockquote-b-vertical-align;
+}
+blockquote p {
+  display: $blockquote-p-display;
+}
+code {
+	background-color: $code-background-color;
+	border: $code-border;
+	color: $code-color;
+	display: $code-display;
+	padding: $code-padding;
+	margin: $code-margin;
+}
+pre{
+	padding: $pre-padding;
+	margin: $pre-margin;
+	word-wrap: $pre-word-wrap;
+	white-space: $pre-white-space;
+}
+kbd{
+	background-color: $kbd-back-color;
+	border-radius: $kbd-border-radius;
+	border: $kbd-border;
+	box-shadow: $kbd-box-shadow;
+	display: $kbd-display;
+	font-family: $kbd-font-family;
+	font-size: $kbd-font-size;
+	font-weight: $kbd-font-weight;
+	opacity: $kbd-opacity;
+	line-height: $kbd-line-height;
+	padding: $kbd-padding;
+	white-space: $kbd-white-space;
 }
